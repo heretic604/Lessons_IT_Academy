@@ -1,4 +1,4 @@
-package lesson_3.homework3.rainbow;
+package lesson_3.homework_3.rainbow;
 
 import java.util.Scanner;
 

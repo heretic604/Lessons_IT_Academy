@@ -20,12 +20,12 @@
  *
  * @version 25.01.2023
  */
-package lesson_3.homework3.runner;
+package lesson_3.homework_3.runner;
 
-import static lesson_3.homework3.rainbow.Rainbow.begin;
+import static lesson_3.homework_3.rainbow.Rainbow.begin;
 
 /**
- * Главный класс, который используется для запуска класса Rainbow.
+ * Главный класс, который используется для запуска метода begin из класса Rainbow.
  */
 public class Runner {
     public static void main(String[] args) {
