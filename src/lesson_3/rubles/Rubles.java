@@ -1,7 +1,7 @@
 /**
  * Программа ставит слово "рубль" в правильный падеж в зависимости от суммы.
  */
-package lesson3.rubles;
+package lesson_3.rubles;
 
 import java.util.Scanner;
 

@@ -2,7 +2,7 @@
  * Программа определяет пору года по номеру месяца
  * и выдаёт ошибку в случае некорректного ввода.
  */
-package lesson3.months;
+package lesson_3.months;
 
 import java.util.Scanner;
 
