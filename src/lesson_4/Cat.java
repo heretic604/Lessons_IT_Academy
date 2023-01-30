@@ -5,7 +5,7 @@ import java.util.Random;
 public class Cat {
     private String name;
     private int age;
-    private int count = 0;
+    private int count;
 
     public Cat(String name, int age) {
         this.name = name;
@@ -36,7 +36,8 @@ public class Cat {
                 '}';
     }
 
-    public void startAllCCycles() { // Метод, запускающий все циклы
+    // Метод, запускающий все циклы
+    public void startAllCycles() {
         getDefault();
         startCycleFor();
         startCycleDoWhile();
@@ -44,7 +45,8 @@ public class Cat {
         System.out.println("Котики закончились! Спасибо за внимание!");
     }
 
-    public void getDefault() { //Первый цикл из пункта 4
+    //Первый цикл из пункта 4
+    public void getDefault() {
         System.out.println("Цикл №1:");
         Cat cat = new Cat("Дефолтик", 0);
         while (count < 10) {
@@ -53,13 +55,15 @@ public class Cat {
         }
     }
 
-    public int getRandomAge() { //Метод, генерирующий случайный возраст
+    //Метод, генерирующий случайный возраст
+    public int getRandomAge() {
         Random random = new Random();
         int randomAge = random.nextInt(28) + 1;
         return randomAge;
     }
 
-    public String getRandomName() {//Метод, генерирующий случайное имя
+    //Метод, генерирующий случайное имя
+    public String getRandomName() {
         Random random = new Random();
         char[] letters = {'q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'a', 's', 'd', 'f', 'g', 'h', 'j', 'k', 'l',
                 'z', 'x', 'c', 'v', 'b', 'n', 'm'};
@@ -71,7 +75,8 @@ public class Cat {
         return String.valueOf(randomName);
     }
 
-    public void startCycleFor() {//Второй цикл из пункта 5
+    //Второй цикл из пункта 5
+    public void startCycleFor() {
         System.out.println("Цикл №2:");
         for (int i = 0; i < 10; i++) {
             setName(getRandomName());
@@ -81,7 +86,8 @@ public class Cat {
         }
     }
 
-    public void startCycleDoWhile() {//Третий цикл из пункта 6
+    //Третий цикл из пункта 6
+    public void startCycleDoWhile() {
         System.out.println("Цикл №3:");
         do {
             Cat cat = new Cat(getRandomName(), getRandomAge());
@@ -90,7 +96,8 @@ public class Cat {
         } while (count < 20);
     }
 
-    public void startCycleForEach() {//Четвертый цикл из пункта 7
+    //Четвертый цикл из пункта 7
+    public void startCycleForEach() {
         System.out.println("Цикл №4:");
         Cat[] cats = new Cat[5];
         for (int i = 0; i < 5; i++) {
