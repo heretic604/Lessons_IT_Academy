@@ -16,6 +16,7 @@ public class Next_day {
     public static void main(String[] args) {
         execute();
     }
+
     public static void execute(){
         Scanner scanner = new Scanner(System.in);
         System.out.printf(INSERT, "day");
