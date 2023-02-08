@@ -154,7 +154,7 @@ public class Port {
             showFleet(fleet);
         } else {
             System.out.printf("""
-                    You are overweight %s kg. Maximum is %s kg
+                    You are overweight. Your weight is %s kg. Maximum is %s kg
                                         
                     """, (int) totalWeight, VALUES.TARGET_MAX);
             showFleet(fleet);
