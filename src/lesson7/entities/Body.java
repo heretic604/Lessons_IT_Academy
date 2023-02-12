@@ -15,5 +15,4 @@ public enum Body {
     public String getNAME() {
         return NAME;
     }
-
 }
