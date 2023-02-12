@@ -7,10 +7,9 @@ import lesson7.entities.Robot;
 public class Factory {
 
     protected void createAllRobots() {
-
         Head[] heads = Head.values();
         Body[] bodies = Body.values();
-        Robot[] robots = new Robot[9];
+        Robot[] robots = new Robot[heads.length * bodies.length];
         int count = 0;
 
         for (int i = 0; i < heads.length; i++) {
